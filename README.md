@@ -5,6 +5,11 @@ Utilities for the PostgreSQL Client [Slonik](https://github.com/gajus/slonik#rea
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [Motivation](#motivation)
+- [API](#api)
+  - [`valuesSingle` - Insert a single record](#valuessingle---insert-a-single-record)
+  - [`valuesList` - Insert multiple records](#valueslist---insert-multiple-records)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Motivation
