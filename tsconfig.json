@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["**/*.spec.ts"]
+}
