@@ -22,7 +22,7 @@ Slonik removed some convenient methods in version [19.x.x](https://github.com/ga
 
 ```js
 import { sql } from "slonik";
-import { valuesSinge } from "@n1ru4l/slonik-utilities";
+import { valuesSingle } from "@n1ru4l/slonik-utilities";
 
 const user = {
   id: 1,
