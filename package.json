@@ -48,6 +48,7 @@
   },
   "scripts": {
     "lint": "eslint --ignore-path .gitignore --ext .ts, \"src/**/*\"",
+    "test": "jest",
     "build:module": "tsc --target es2017 --outDir dist/module",
     "build:main": "tsc --target es5 --outDir dist/main",
     "build": "rimraf dist && yarn build:module && yarn build:main"
