@@ -11,6 +11,7 @@ Utilities for the PostgreSQL Client [Slonik](https://github.com/gajus/slonik#rea
   - [`valuesSingle` - Insert a single record](#valuessingle---insert-a-single-record)
   - [`valuesList` - Insert multiple records](#valueslist---insert-multiple-records)
   - [`assignmentList` - Update multiple columns](#assignmentlist---update-multiple-columns)
+- [`identifierList` - Generate a list of identifiers](#identifierlist---generate-a-list-of-identifiers)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -82,5 +83,20 @@ const query = sql`
     otherValue: 10
   })}
   WHERE "id" = 1;
+`;
+```
+
+## `identifierList` - Generate a list of identifiers
+
+```js
+import { sql } from "slonik";
+import { identifierList } from "@n1ru4l/slonik-utilities";
+
+const query = sql`
+  SELECT ${identifierList([
+    ["users", "id"],
+    ["users", "someOtheColumn"]
+  ])}
+  FROM "users";
 `;
 ```
